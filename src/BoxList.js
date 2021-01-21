@@ -21,11 +21,11 @@ function BoxList() {
       <div>
         { boxes.map(box =>
           <Box
-            key={id}
+            key={box.id}
             backgroundColor={box.backgroundColor}
             width={box.width}
             height={box.height}
-            removeBox={evt => removeBox(id)}
+            removeBox={evt => removeBox(box.id)}
           />)}
       </div>
     )
@@ -39,7 +39,7 @@ function BoxList() {
 
   /* Remove box (called by child element) */
   function removeBox(id) {
-    setBoxes(boxes.filter(b => b.id !== id));
+    setBoxes( boxes => boxes.filter(b => b.id !== id));
   }
 
   return (

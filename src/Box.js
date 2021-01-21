@@ -9,7 +9,7 @@ import { v4 as uuid } from 'uuid';
  *  - height (number in px)
  *  - removeBox (function)
  *
- * App -> BoxList -> Box
+  * App -> BoxList -> { Box, NewBoxForm }
  */
 
  function Box({ backgroundColor, width, height, removeBox }) {
