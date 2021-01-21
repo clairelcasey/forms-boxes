@@ -15,6 +15,7 @@ function NewBoxForm({addBox}){
     setFormData(fData => ({...fData, [name]: value}));
   }
 
+  /* Handle form submit */
   function handleSubmit(evt){
     evt.preventDefault();
     addBox(formData);

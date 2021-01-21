@@ -2,13 +2,13 @@ import { useState } from "react";
 import { v4 as uuid } from 'uuid';
 
 /** Box
- * 
+ *
  * Props:
  *  - backgroundColor (string)
  *  - width (number in px)
  *  - height (number in px)
  *  - removeBox (function)
- * 
+ *
  * App -> BoxList -> Box
  */
 
@@ -26,3 +26,5 @@ import { v4 as uuid } from 'uuid';
     </div>
    )
  }
+
+ export default Box;
