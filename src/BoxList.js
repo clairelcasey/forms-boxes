@@ -4,11 +4,11 @@ import NewBoxForm from './NewBoxForm';
 import { v4 as uuid } from 'uuid';
 
 
-/** BoxList: renders Box components and NewBoxForm 
- * 
+/** BoxList: renders Box components and NewBoxForm
+ *
  * State:
- *  - boxes: array [ {backgroundColor, width, height} ...]
- * 
+ *  - boxes: array [ {backgroundColor, width, height, id} ...]
+ *
  * App -> BoxList -> { Box, NewBoxForm }
 */
 
@@ -21,6 +21,7 @@ function BoxList() {
       <div>
         { boxes.map(box =>
           <Box
+            key={id}
             backgroundColor={box.backgroundColor}
             width={box.width}
             height={box.height}
